@@ -37,20 +37,16 @@ return {
     lazy = true,
   },
 
-  {
-    "EdenEast/nightfox.nvim",
-    lazy = true,
-  },
-  {
-
-    "folke/tokyonight.nvim",
-    lazy = true,
-    opts = {
-      style = "moon", -- Styles: "storm", "night", "day", "moon"
-      styles = {
-        comments = { italic = true },
-        keywords = { italic = false },
-      },
-    },
-  },
+  -- {
+  --
+  --   "folke/tokyonight.nvim",
+  --   lazy = true,
+  --   opts = {
+  --     style = "moon", -- Styles: "storm", "night", "day", "moon"
+  --     styles = {
+  --       comments = { italic = true },
+  --       keywords = { italic = false },
+  --     },
+  --   },
+  -- },
 }

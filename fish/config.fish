@@ -3,7 +3,11 @@ set -g fish_greeting ""
 
 # 环境变量
 set -gx EDITOR nvim # 默认编辑器
-set -gx LANG en_US.UTF-8 # 语言环境
+# set -gx LANG en_US.UTF-8 # 语言环境 这个会导致整个系统显示英文
+# 下面这两行配置终端显示英文
+set -gx LC_MESSAGES en_US.UTF-8
+set -gx LC_CTYPE en_US.UTF-8
+
 set -gx XDG_CONFIG_HOME $HOME/.config # XDG 配置目录
 set -gx XDG_DATA_HOME $HOME/.local/share # XDG 数据目录
 set -gx XDG_CACHE_HOME $HOME/.cache # XDG 缓存目录
@@ -21,6 +25,9 @@ end
 if status is-interactive
     fish_vi_key_bindings # 启用 vi 模式按键绑定
 
+    # 代理
+    # alias proxy 'export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
+    # alias unproxy 'unset all_proxy'
     # 目录导航
     alias jj "cd .."
     alias .. 'cd ..'
@@ -42,10 +49,10 @@ if status is-interactive
 
     # 适用于linux/mac, 退出终端仍能neovide不退出
     # neovide config
-    # function nv
-    #     nohup neovide.exe &
-    # end
-    alias nv 'neovide.exe'
+    function nv
+        nohup neovide &
+    end
+    # alias nv 'neovide.exe'
 
     # alias vf "nvim $(fzf)"
     function vf
