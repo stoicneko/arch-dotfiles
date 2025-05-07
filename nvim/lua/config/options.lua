@@ -19,7 +19,7 @@ vim.g.neovide_title_text_color = "pink"
 vim.g.neovide_remember_window_size = true
 
 -- 拼写检查
--- vim.opt.spell = true
+vim.opt.spell = false
 -- vim.opt.spelllang = { "en", "cjk" }
 -- vim.opt.spelloptions = "camel"
 
