@@ -29,6 +29,8 @@
     ~/.config/btop: btop
 
     ~/.config/kitty: kitty
+
+    ~/.config/hypr: hypr
 # 可选：执行 shell 命令 (例如，安装插件管理器或插件)
 - shell:
   - command: git submodule update --init --recursive # 初始化 Git 子模块 (如果有的话)
