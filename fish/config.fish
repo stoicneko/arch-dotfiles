@@ -3,7 +3,7 @@ set -g fish_greeting ""
 
 # 环境变量
 set -gx EDITOR nvim # 默认编辑器
-set -gx LANG en_US.UTF-8 # 语言环境 这个会导致整个系统显示英文
+set -gx LANG en_US.UTF-8 # 语言环境 这个会导致整个系统显示英文(gnome)
 # 下面这两行配置终端显示英文
 # set -gx LC_MESSAGES en_US.UTF-8
 # set -gx LC_CTYPE en_US.UTF-8
