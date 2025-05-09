@@ -13,6 +13,7 @@ set -gx XDG_DATA_HOME $HOME/.local/share # XDG 数据目录
 set -gx XDG_CACHE_HOME $HOME/.cache # XDG 缓存目录
 set -gx PATH ~/.local/bin $PATH # 用户本地二进制目录
 
+set -gx aurhelper paru
 # 全局函数
 function upd -d "Git pull, add all, commit with 'update', and push"
     git pull
@@ -39,7 +40,6 @@ if status is-interactive
     alias vi nvim
     alias v nvim
     alias t tmux
-    alias fa fastfetch
 
     alias cfish "nvim $HOME/.config/fish/config.fish"
     alias sfish "source $HOME/.config/fish/config.fish"
@@ -59,14 +59,26 @@ if status is-interactive
         nvim $(fzf)
     end
 
+    alias op xdg-open
     alias l "eza -lh --icons=auto" # long list
     alias ls "eza -1 --icons=auto" # short list
     alias ll "eza -lha --icons=auto --sort=name --group-directories-first" # long list all
     alias ld "eza -lhD --icons=auto" # long list dirs
     alias lt "eza --icons=auto --tree" # list folder as tree
+
+    alias un "$aurhelper -Rns" # uninstall package
+    alias up "$aurhelper -Syu" # update system/package/aur
+    alias pf "$aurhelper -Qs" # list installed package
+    alias ps "$aurhelper -Ss" # search available package
+    alias pi "$aurhelper -S" # install package
+    alias pc "$aurhelper -Sc" # remove unused cache
+    alias po "$aurhelper -Qtdq | $aurhelper -Rns -" # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
+
     # 终端操作
     abbr :q exit
     abbr b btop
+    abbr fa fastfetch
+    abbr m musicfox
 
     # Git 相关
     abbr gcl "git clone"
