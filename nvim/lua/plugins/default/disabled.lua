@@ -15,10 +15,10 @@ return {
     "nvim-pack/nvim-spectre",
     enabled = false,
   },
-  {
-    "catppuccin/nvim",
-    enabled = false,
-  },
+  -- {
+  --   "catppuccin/nvim",
+  --   enabled = false,
+  -- },
   {
     "folke/todo-comments.nvim",
     enabled = false,

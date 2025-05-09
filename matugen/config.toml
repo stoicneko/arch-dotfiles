@@ -10,7 +10,7 @@
 # # post_hook = 'pkill -SIGUSR2 waybar'
 
 [templates.kitty]
-input_path = '~/dotfiles/matugen/.config/matugen/templates/kitty-colors.conf'
+input_path = '~/dotfiles/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/matugen.conf'
 post_hook = 'kill -SIGUSR1 $(pgrep kitty)'
 
@@ -20,20 +20,20 @@ post_hook = 'kill -SIGUSR1 $(pgrep kitty)'
 # post_hook = '~/.local/share/bin/gen_gradient_colors.py; pkill -SIGUSR1 cava'
 
 [templates.nvim]
-input_path = '~/dotfiles/matugen/.config/matugen/templates/nvim-colors.lua'
+input_path = '~/dotfiles/matugen/templates/nvim-colors.lua'
 output_path = '~/.config/nvim/lua/plugins/matugen.lua'
-post_hook = 'sleep 2;pkill -SIGUSR1 nvim'
+post_hook = 'sleep 2;pkill -SIGUSR1 nvim || true'
 #
 # [templates.dunst]
 # input_path = '~/dotfiles/matugen/.config/matugen/templates/dunstrc-colors'
 # output_path = '~/.config/dunst/dunstrc'
 
 [templates.starship]
-input_path = '~/dotfiles/matugen/.config/matugen/templates/starship-colors.toml'
-output_path = '~/dotfiles/starship/.config/starship.toml'
+input_path = '~/dotfiles/matugen/templates/starship-colors.toml'
+output_path = '~/.config/starship.toml'
 
 [templates.yazi]
-input_path = '~/dotfiles/matugen/.config/matugen/templates/yazi-colors.toml'
+input_path = '~/dotfiles/matugen/templates/yazi-colors.toml'
 output_path = '~/.config/yazi/theme.toml'
 
 # [templates.rofi]
