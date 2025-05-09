@@ -1,0 +1,63 @@
+[config]
+# command = "swww"
+# arguments = ["img", "--transition-type", "center"]
+# set = false
+
+# [templates.waybar]
+# input_path = '~/.dotfiles/matugen/.config/matugen/templates/color.css'
+# output_path = '~/.config/waybar/matugen.css'
+# post_hook = 'pkill -x "waybar"; toggle_waybar.sh'
+# # post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.kitty]
+input_path = '~/dotfiles/matugen/.config/matugen/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/matugen.conf'
+post_hook = 'kill -SIGUSR1 $(pgrep kitty)'
+
+# [templates.cava]
+# input_path = '~/dotfiles/matugen/.config/matugen/templates/cava-colors'
+# output_path = '~/.config/cava/matugen'
+# post_hook = '~/.local/share/bin/gen_gradient_colors.py; pkill -SIGUSR1 cava'
+
+[templates.nvim]
+input_path = '~/dotfiles/matugen/.config/matugen/templates/nvim-colors.lua'
+output_path = '~/.config/nvim/lua/plugins/matugen.lua'
+post_hook = 'sleep 2;pkill -SIGUSR1 nvim'
+#
+# [templates.dunst]
+# input_path = '~/dotfiles/matugen/.config/matugen/templates/dunstrc-colors'
+# output_path = '~/.config/dunst/dunstrc'
+
+[templates.starship]
+input_path = '~/dotfiles/matugen/.config/matugen/templates/starship-colors.toml'
+output_path = '~/dotfiles/starship/.config/starship.toml'
+
+[templates.yazi]
+input_path = '~/dotfiles/matugen/.config/matugen/templates/yazi-colors.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+# [templates.rofi]
+# input_path = '~/dotfiles/matugen/.config/matugen/templates/rofi-colors.rasi'
+# output_path = '~/.config/rofi/matugen.rasi'
+#
+# [templates.hyprland]
+# input_path = '~/dotfiles/matugen/.config/matugen/templates/hyprland-colors.conf'
+# output_path = '~/.config/hypr/matugen.conf'
+# post_hook = 'hyprctl reload'
+#
+[templates.musicfox]
+input_path = '~/.config/matugen/templates/musicfox'
+output_path = '~/.config/matugen/scripts/musicfox'
+post_hook = 'sh ~/.config/matugen/scripts/musicfox'
+#
+# [templates.btop]
+# input_path = '~/.config/matugen/templates/btop.theme'
+# output_path = '~/.config/btop/themes/matugen.theme'
+
+# [config.custom_colors]
+# red = "#f38ba8"
+# green = "#a6e3a1"
+# yellow = "#f9e2af"
+# blue = "#89b4fa"
+# orange = "#fab387"
+# purple = "#cba6f7"
