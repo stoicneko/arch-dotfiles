@@ -38,8 +38,10 @@ if status is-interactive
     alias .5 'cd ../../../../..'
     # 编辑器和配置文件
     alias vi nvim
-    alias v nvim
+    # alias v nvim
     alias t tmux
+    alias v '~/.local/share/bin/auto_padding_nvim.sh'
+    alias nvim '~/.local/share/bin/auto_padding_nvim.sh'
 
     alias cfish "nvim $HOME/.config/fish/config.fish"
     alias sfish "source $HOME/.config/fish/config.fish"
