@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export OBSIDIAN_REST_API_KEY:4efe43e2fe1df8a160e4cd824f9ecc464f08dd74d2764701b66abf15533ce9ab
 SETUVAR SXHKD_SHELL:/usr/bin/bash
 SETUVAR __fish_initialized:3800
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
