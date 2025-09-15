@@ -33,17 +33,17 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "NeoSolarized",
     },
   },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    opts = {
-      flavour = "mocha",
-      transparent_background = true,
-    },
-  },
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   opts = {
+  --     flavour = "mocha",
+  --     transparent_background = true,
+  --   },
+  -- },
   {
     "echasnovski/mini.ai",
     -- enabled = false,

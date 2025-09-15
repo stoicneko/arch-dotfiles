@@ -8,11 +8,11 @@ return {
     -- },
   },
 
-  {
-    "projekt0n/github-nvim-theme",
-    lazy = true, -- Load theme eagerly on startup
-  },
-
+  -- {
+  --   "projekt0n/github-nvim-theme",
+  --   lazy = true, -- Load theme eagerly on startup
+  -- },
+  --
   {
     "ellisonleao/gruvbox.nvim",
     lazy = true, -- Load theme eagerly on startup
@@ -26,17 +26,17 @@ return {
       contrast = "hard",
     },
   },
-
-  {
-    "rebelot/kanagawa.nvim",
-    lazy = true, -- Load theme eagerly on startup
-  },
-
-  {
-    "xero/miasma.nvim",
-    lazy = true,
-  },
-
+  --
+  -- {
+  --   "rebelot/kanagawa.nvim",
+  --   lazy = true, -- Load theme eagerly on startup
+  -- },
+  --
+  -- {
+  --   "xero/miasma.nvim",
+  --   lazy = true,
+  -- },
+  --
   -- {
   --
   --   "folke/tokyonight.nvim",
